@@ -16,3 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/events', 'Event\EventController@index')->name('events');
+Route::get('/events/{event}/show', 'Event\EventController@show')->name('events.show');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

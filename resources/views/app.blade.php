@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tranvas Project</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    @stack('styles')
 </head>
 <body>
     <div class="container">
@@ -14,5 +15,7 @@
             @yield('content')
         </div>
     </div>
+
+    @stack('scripts')
 </body>
 </html>

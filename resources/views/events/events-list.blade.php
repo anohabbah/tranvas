@@ -9,7 +9,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            {{ $event->title }}
+                            <a href="{{ route('events.show', $event) }}">{{ $event->title }}</a>
                             <small class="m-l-5">{{ $event->address }}</small>
                         </h3>
                     </div>
@@ -44,7 +44,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">
-                            {{ $event->title }}
+                            <a href="{{ route('events.show', $event) }}">{{ $event->title }}</a>
                             <small class="m-l-5">{{ $event->address }}</small>
                         </h3>
                     </div>

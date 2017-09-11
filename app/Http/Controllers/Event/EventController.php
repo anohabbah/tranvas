@@ -21,4 +21,9 @@ class EventController extends Controller
 
         return view('events.events-list')->withUpcomingEvents($upcomingEvents)->withPastEvents($pastEvents);
     }
+
+    public function show(Event $event)
+    {
+        return view('events.show')->withEvent($event);
+    }
 }
